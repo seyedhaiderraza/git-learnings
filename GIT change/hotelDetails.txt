@@ -1,0 +1,6 @@
+hello
+what is going on guys
+I do vi filename to open in edit mode
+and then press 'i' to insert data here
+and then I do ESC and  shift+':' => 'wq' two keys to save and continue editing
+

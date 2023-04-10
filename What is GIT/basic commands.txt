@@ -41,6 +41,11 @@ origin = name of repo
 
  git remote -v
  details of remote url and name
+
+ git push origin master
+ --in above we could use whole url instead of name reference origin
+ ..................
+ branches:
  
 
 
