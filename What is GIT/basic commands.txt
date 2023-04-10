@@ -1,0 +1,16 @@
+mkdir
+ls
+ls -a OR ls -Hidden
+cd project
+...............
+git init : initialise empty git rpeository on local
+
+ touch names.txt
+
+ git status - shows history of untracked files, staged files, commits
+
+to create a snapshot of changes in your local:
+stage->commit->push
+git add . OR git add 'filename' OR git add 'dir  name'
+ -> git commit -m "blah"
+  -> git push

@@ -1,0 +1,3 @@
+-git is a software to record the history of changes made to a project.
+-multiple users can share the code change history using git and github
+-
