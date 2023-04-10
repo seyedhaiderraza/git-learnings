@@ -11,6 +11,11 @@ git init : initialise empty git rpeository on local
 
 to create a snapshot of changes in your local:
 stage->commit->push
-git add . OR git add 'filename' OR git add 'dir  name'
+git add .           OR  git add 'filename'           OR  git add 'dir  name'             OR git add 'dir  name' 'filename'
+
  -> git commit -m "blah"
+
   -> git push
+
+....................
+git log           --> to see history of all commits
