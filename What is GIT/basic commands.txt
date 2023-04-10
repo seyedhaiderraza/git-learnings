@@ -28,7 +28,13 @@ git reset d4d9fe5e5d42d9845ca3ef21b970026a20ab58421~
  .....................
  git stash
  put all your current changes to backstage
+should be-uncommited changes
+....................
+git stash pop 
+to bring all stashed changes back
 
- 
+
+
+
 
 
