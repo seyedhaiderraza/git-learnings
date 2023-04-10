@@ -2,6 +2,7 @@ mkdir
 ls
 ls -a OR ls -Hidden
 cd project
+rm -rf <fileName>
 ...............
 git init : initialise empty git rpeository on local
 
@@ -19,3 +20,5 @@ git add .           OR  git add 'filename'           OR  git add 'dir  name'    
 
 ....................
 git log           --> to see history of all commits
+
+git reset d4d9fe5e5d42d9845ca3ef21b970026a20ab58421~         --> reset one commit
