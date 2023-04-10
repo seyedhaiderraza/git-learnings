@@ -27,13 +27,21 @@ git reset d4d9fe5e5d42d9845ca3ef21b970026a20ab58421~
 
  .....................
  git stash
- put all your current changes to backstage
+ put all your current changes + staged changes to backstage
 should be-uncommited changes
 ....................
 git stash pop 
 to bring all stashed changes back
+git stsh clear  
+to remove all stashed changes [delete]
 
+....................
+git remote add origin <github-repo-name>
+origin = name of repo
 
+ git remote -v
+ details of remote url and name
+ 
 
 
 
