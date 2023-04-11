@@ -154,3 +154,8 @@ merge conflict:
 6. git push origin master
 7. create PR   -> merge
 8. git pull upstream/master 
+...............................
+git interactive rebase
+- work on commits present in local
+-not for commits pushed to repo
+
