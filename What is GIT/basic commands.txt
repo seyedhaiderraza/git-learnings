@@ -85,3 +85,72 @@ upstream URL = from where we have forked the project
 to connect forked repo to fork-from repo:
 
 $ git remote add upstream <fork-from URL>
+.............
+push changes to branch of your copy of forked project:
+
+git push origin learn/git-fork-learning 
+this will create a mesg on upstream repo for merge and pull request
+
+If a branch has pull request -> new changes wont create a new pull request
+so when required you create new branch for each new feature/bug etc
+.................
+If you create a new branch and 
+do 
+-git push origin <- it will not push to new branch 
+- git push origin <newbranch>
+....................
+removing a commit from PR(forked to original repo)
+
+> git reset commitid       <- commitid above which the commits needed to be removed
+> git add .
+> git stash
+> git push origin <featurebranch> -f       <- its a forced push to update the PR with removed commit already present in PR
+.......................
+
+git fetch --all -prune   => fetches all the ahead commits in other branches to the current branch (-prune for all deleted commits as well)
+
+ALTERNATIVELY -> git pull upstream master
+
+fork repo/ branch 123 --> 2 commits-->PR to origrepo(master) --> merged
+/branch 123 = has 2 commits changes ✓
+/origrepo(master) = has 2 commits changes ✓
+
+but
+
+/forkedrepo/master = has 2 commits changes ╳ No!
+
+to bring forkedrepocopy-master branch uptodate with origrepo-master
+1. git checkout master (forked repo copy)
+2. git pull
+3. git fetch --all --prune
+4. git reset --hard upstream/master
+5. git push origin master
+`This branch is up to date with.........`
+
+....
+deleting a branch
+
+$ git branch --delete learn/delete-commits
+Deleted branch learn/delete-commits (was 83ae90d).
+................................
+combining multiple commits into one
+1. git log -> displays -> <commit-1>, <commit-2>, <commit-3>
+
+2. git rebase -i commit-1
+--opens a text editor to enter combo commit message for commit-2 and commit-3 to combine into one
+[editor: press i, enter commmit msg, press esc, press shift+:, press wq]
+
+3. git log -> display -> <commit-1>, <combo-commit of commit-1 and commit-2>
+..................................
+git reset --hard 83ae90d63c3c648786ab55803c3a18ba002ce840
+removes all ahead commits of the mentioned commit-id
+.................................
+merge conflict:
+1. if we do git pull
+2. merge conflicts come 
+3. resolve in files 
+4. git add .
+5. git commit -m "commit has resolve merge changes"
+6. git push origin master
+7. create PR   -> merge
+8. git pull upstream/master 
