@@ -57,4 +57,19 @@ enter text etc
 keypress -> ESC -> shift+: => type wq (save n Exit), q(save and continue)
 
 
+(HEAD -> feature/hotelbranches, origin/feature/hotelbranches)
+-indicates the current pointer of activity is pointing to the branch
+- second paramter indicates remote(origin) branch to which all commits ae made 
 
+............
+Git fork:
+
+ceate a copy of another project in your account
+
+github -> goto user-> project -> fork
+terminal -> git clone <URL>
+
+upstream URL = from where we have forked the project
+to connect forked repo to fork-from repo:
+
+$ git remote add upstream <fork-from URL>
