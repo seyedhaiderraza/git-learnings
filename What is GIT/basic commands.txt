@@ -46,8 +46,19 @@ origin = name of repo
  --in above we could use whole url instead of name reference origin
  ..................
  branches:
- 
+used for feature separation, bugfixes, uat, production code
+never commit on main branch
+main contains finalised code
 
+Create branch - git branch abc
+switch to branch - git checkout abc
+
+......
+basic touch commands:
+vi filename.txt
+keypress -> i
+enter text etc
+keypress -> ESC -> shift+: => type wq (save n Exit), q(save and continue)
 
 
 
