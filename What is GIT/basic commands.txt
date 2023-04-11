@@ -48,11 +48,8 @@ origin = name of repo
  branches:
 used for feature separation, bugfixes, uat, production code
 never commit on main branch
-main contains finalised code
-
 Create branch - git branch abc
 switch to branch - git checkout abc
-
 ......
 basic touch commands:
 vi filename.txt
