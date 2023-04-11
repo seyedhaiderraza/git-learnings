@@ -56,6 +56,17 @@ vi filename.txt
 keypress -> i
 enter text etc
 keypress -> ESC -> shift+: => type wq (save n Exit), q(save and continue)
+....................
+merging feature into master branches:
+feature branch(with changes) -> a
+master branch-> b
 
+- git checkout b
+- git merge a 
+
+resolve conflicts within files
+
+- git add .
+- git commit -m "resolved conflicts"
 
 
