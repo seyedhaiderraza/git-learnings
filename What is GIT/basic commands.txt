@@ -216,6 +216,7 @@ git clone --recurse-submodules <Repo>
 will automatically initialize and update each submodule in the repository cloned
 
 ..................
-$ git log --after="2023-04-11" --before="2023-04-22"  <- for showing commits in between certain dates
-git log --grep="refactor"           <- for showing commits with containings "refactor" keyword
-
+$
+ git log --after="2023-04-11" --before="2023-04-22"         <- for showing commits in between certain dates
+ git log --grep="refactor"                                   <- for showing commits with containings "refactor" keyword
+ git log feature/hotelbranches..master                       <- shows commits in master  NOT present in feature branch
