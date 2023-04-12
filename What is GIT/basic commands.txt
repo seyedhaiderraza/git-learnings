@@ -195,3 +195,10 @@ if we acidentally deleted a useul commit we can find a commit deleted and do git
 4. git reflog -> head->reset-c3, c1-33131,c2-23123, c3-23133,c4-23123 [shows deleted commits as well]
 5. git reset --hard c33131      -> will restore c1,c2,c3 
 ......................
+accidental deleting of a branch
+
+1. (master) git branch -D 'feature/branch1'
+2. (master) git reflog -> HEAD->c1 move from feature to master, c2 move from master to feature, c3,c4,c5....
+we copy c2 since it contains feature branch latest
+3. git branch feature/branch1 c2
+---thats it branch will be back with all the changes---
