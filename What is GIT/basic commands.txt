@@ -202,3 +202,20 @@ accidental deleting of a branch
 we copy c2 since it contains feature branch latest
 3. git branch feature/branch1 c2
 ---thats it branch will be back with all the changes---
+..........................
+git submodule add <repo>    <- adds the repo as a sub-module of current git project
+
+git submodule add <Repo>                              <- https://github.com/seyedhaiderraza/node-express-mongo-concepts.git
+- creates a clone of <Repo>
+- switches to main branch
+- makes a .gitmodules with submodule details
+- does entry in .git/config with submodule details
+
+............................
+git clone --recurse-submodules <Repo>
+will automatically initialize and update each submodule in the repository cloned
+
+..................
+$ git log --after="2023-04-11" --before="2023-04-22"  <- for showing commits in between certain dates
+git log --grep="refactor"           <- for showing commits with containings "refactor" keyword
+

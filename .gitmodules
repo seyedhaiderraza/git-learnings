@@ -1,0 +1,3 @@
+[submodule "node-express-mongo-concepts"]
+	path = node-express-mongo-concepts
+	url = https://github.com/seyedhaiderraza/node-express-mongo-concepts.git
