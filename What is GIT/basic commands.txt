@@ -165,4 +165,9 @@ git commit --amend "message updated"
 
 another way:
 1. git log -> HEAD->c1, c2 ,c3,c4 ,c5
-2. git rebase HEAD~3
+2. git rebase HEAD~3 -> this will open rebase editor with c1,c2,c3 commits to perform reword,squash etc
+3. edit the commits to be squashed and leave the one into which u want to squash
+................................
+cherry-picking
+moving one commit from one branch to another
+
