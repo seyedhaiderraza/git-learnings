@@ -175,15 +175,23 @@ another way:
 cherry-picking
 moving one commit from one branch to another
 
+1. (master) git log  -> c1,c2,c3,c4,c5
+
+2. git checkout feature/branch1
+
+3. git cherry-pick c4
+--it will merge only c4 and will ask to resolve conflicts, git add ., create a new commit
+
 ............
-Git fork:
+git reflog
 
-ceate a copy of another project in your account
+-it shows all the commits history including the deleted opens
 
-github -> goto user-> project -> fork
-terminal -> git clone <URL>
+if we acidentally deleted a useul commit we can find a commit deleted and do git reset --hard <deletedcommit>
 
-upstream URL = from where we have forked the project
-to connect forked repo to fork-from repo:
-
-$ git remote add upstream <fork-from URL>
+1. git log ->  c1-33131,c2-23123, c3-23133,c4-23123
+2. git reset --hard c3
+3. git log -> c3, c4
+4. git reflog -> head->reset-c3, c1-33131,c2-23123, c3-23133,c4-23123
+5. git reset --hard c33131      -> will restore c1,c2,c3 
+......................
