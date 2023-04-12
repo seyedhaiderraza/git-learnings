@@ -140,7 +140,7 @@ combining multiple commits into one
 --opens a text editor to enter combo commit message for commit-2 and commit-3 to combine into one
 [editor: press i, enter commmit msg, press esc, press shift+:, press wq]
 
-3. git log -> display -> <commit-1>, <combo-commit of commit-1 and commit-2>
+3. git log -> display -> <commit-1>, <combo-commit of commit-2 and commit-3>
 ..................................
 git reset --hard 83ae90d63c3c648786ab55803c3a18ba002ce840
 removes all ahead commits of the mentioned commit-id
@@ -159,3 +159,10 @@ git interactive rebase
 - work on commits present in local
 -not for commits pushed to repo
 
+............................
+changing last commit message
+git commit --amend "message updated"
+
+another way:
+1. git log -> HEAD->c1, c2 ,c3,c4 ,c5
+2. git rebase HEAD~3
