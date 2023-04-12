@@ -191,7 +191,7 @@ if we acidentally deleted a useul commit we can find a commit deleted and do git
 
 1. git log ->  c1-33131,c2-23123, c3-23133,c4-23123
 2. git reset --hard c3
-3. git log -> c3, c4
-4. git reflog -> head->reset-c3, c1-33131,c2-23123, c3-23133,c4-23123
+3. git log -> c3, c4 [not shows deleted commits]
+4. git reflog -> head->reset-c3, c1-33131,c2-23123, c3-23133,c4-23123 [shows deleted commits as well]
 5. git reset --hard c33131      -> will restore c1,c2,c3 
 ......................
